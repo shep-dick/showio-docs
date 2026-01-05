@@ -28,3 +28,12 @@
   --md-default-fg-color: #333;
   --md-typeset-color: #333;
 }
+
+/* True black header and footer for dark mode */
+[data-md-color-scheme="slate"] .md-header {
+  background-color: #000000;
+}
+
+[data-md-color-scheme="slate"] .md-footer {
+  background-color: #000000;
+}
