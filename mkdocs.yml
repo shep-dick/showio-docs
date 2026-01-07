@@ -1,3 +1,14 @@
+# NAVIGATION TREE
+nav:
+  - Home: index.md
+  - OSC API: 
+    - Overview: osc_api/overview.md
+    - Configuration:
+      - Overview: osc_api/cfg/overview.md
+      - Get Device Config: osc_api/cfg/sio_cfg_get.md
+      - Set Digital Input Event Message: osc_api/cfg/sio_cfg_eventmessage_di_set.md
+
+# SITE CONFIGURATION
 site_name: Show Technologies Docs
 site_url: https://docs.show-technologies.com/
 theme:
@@ -25,14 +36,26 @@ theme:
         name: Switch to dark mode
   features:
     - navigation.instant
+    - navigation.instant.preview
     - navigation.footer
     - navigation.path
     - navigation.indexes
     - toc.integrate
+  icon:
+    admonition:
+      warning: fontawesome/solid/warning
 
-nav:
-  - Home: index.md
-  - OSC API: osc_api.md
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 extra:
   generator: false
