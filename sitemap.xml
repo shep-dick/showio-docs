@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://docs.show-technologies.com/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.show-technologies.com/api_explainer/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.show-technologies.com/bulk_api/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.show-technologies.com/osc_api/overview/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.show-technologies.com/osc_api/cfg/overview/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.show-technologies.com/osc_api/cfg/sio_cfg_eventmessage_di_set/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.show-technologies.com/osc_api/cfg/sio_cfg_get/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+</urlset>
