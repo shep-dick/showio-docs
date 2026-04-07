@@ -3,6 +3,8 @@ nav:
   - Home: index.md
   - Getting Started:
     - Welcome: getting_started/welcome.md
+    - Ethernet Guide: getting_started/ethernet_guide.md
+    - OSC Guide: getting_started/osc_guide.md
   - Products:
     - Overview: products/overview.md
     - Digital Combo 8:
