@@ -3,7 +3,6 @@ nav:
   - Home: index.md
   - Getting Started:
     - Welcome: getting_started/welcome.md
-    - First Steps: getting_started/first_steps.md
   - Products:
     - Overview: products/overview.md
     - Digital Combo 8:
