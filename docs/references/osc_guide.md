@@ -2,6 +2,8 @@
 
 OSC is a flexible, transportation-agnostic show control protocol. It is the foundation upon which ShowIO control networks are built. Much of the information on this page comes from [OpenSoundControl Specification](https://ccrma.stanford.edu/groups/osc/spec-1_0.html) by Matt Wright; please refer to that for a comprehensive explanation of how OSC works.
 
+OSC is an endlessly configurable way to send information and commands to entertainment software and devices across various types of network. The OpenSoundControl list of OSC implementations is non-exhaustive but contains dozens of commonly used softwares, controllers, and programming languages. The ability to easily interface with seemingly disparate devices is why ShowIO uses OSC as the backbone of its control and communication. With only network and power connections and some OSC messages, a user can use a ShowIO node to read a sensor, trigger a sound and video cue in QLab, fire a lighting cue in EOS, and control a solenoid valve, all with minimal configuration and no need to "translate" for different programs.
+
 ## Anatomy of an OSC Message
 
 An OSC message consists of three parts: an address, a type tag, and some number of arguments. An OSC message does not need an argument, but will have the other two items. Each piece is separated by null (`/0`) ASCII characters and padded out to a multiple of 4 bytes. The address defines the action a device should take upon receipt of the message, the type tag defines what information (if any) is associated with that action, and the argument is that information.

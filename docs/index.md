@@ -4,7 +4,7 @@
 
     **The ShowIO platform is still in development. The contents of this documentation may be incomplete or change frequently.**
 
-    *Last updated Febuary 17, 2026*
+    *Last updated April 13, 2026*
 
 ## Introduction
  
@@ -14,11 +14,16 @@ Welcome to Show Technologies' documentation page! This site contains step-by-ste
 
 :fontawesome-solid-lightbulb: **[Getting Started](getting_started/welcome.md)**
 
-- Start here for a comprehensive walkthrough of how to start using ShowIO.
-
 :fontawesome-solid-microchip: **[Products](products/overview.md)**
 
-- Information including user manuals and datasheets for all ShowIO hardware products.
+- [SIO-S08DC](products/s08dc/manual.md)
+
+:fontawesome-solid-network-wired: **[ShowIO API](osc_api/overview.md)**
+
+- [Configuration](osc_api/configuration_commands/overview.md)
+- [Discovery](osc_api/discovery_commands/overview.md)
+- [I/O Commands](osc_api/io_commands/overview.md)
+- [Utility Commands](osc_api/utility_commands/overview.md)
 
 :material-connection: **Integrations (COMING SOON)**
 
@@ -27,10 +32,6 @@ Welcome to Show Technologies' documentation page! This site contains step-by-ste
 :fontawesome-solid-book: **Cookbook (COMING SOON)**
 
 - Handy tutorials on how to make cool effects with ShowIO.
-
-:fontawesome-solid-network-wired: **[ShowIO API](osc_api/overview.md)**
-
-- Reference for ShowIO API OSC Commands.
 
 ## Links
 
