@@ -2,14 +2,17 @@
 
 We're excited to see what you can build with your new ShowIO node! At Show Technologies, we believe that we are The Fastest Way from Idea to Effect, and this guide is designed to prove it. Follow these steps and you'll get your show control software talking to the real world in no time.
 
-## Contents
+[1. You Will Need](../s08dc/quick_start_guide.md#1-you-will-need)
 
-     - [1. You Will Need](../s08dc/quick_start_guide.md#1-you-will-need)
-     - [2. Plugging In](../s08dc/quick_start_guide.md#2-plugging-in)
-     - [3. Getting On The Network](../s08dc/quick_start_guide.md#3-getting-on-the-network)
-     - [4. Setting Up Digital Outputs](../s08dc/quick_start_guide.md#4-digital-outputs)
-     - [5. Setting Up Digital Inputs](../s08dc/quick_start_guide.md#5-digital-inputs)
-     - [6. Programming Your Effect](../s08dc/quick_start_guide.md#6-program-your-effect)
+[2. Plugging In](../s08dc/quick_start_guide.md#2-plugging-in)
+
+[3. Getting On The Network](../s08dc/quick_start_guide.md#3-getting-on-the-network)
+
+[4. Setting Up Digital Outputs](../s08dc/quick_start_guide.md#4-setting-up-digital-outputs)
+
+[5. Setting Up Digital Inputs](../s08dc/quick_start_guide.md#5-setting-up-digital-inputs)
+
+[6. Programming Your Effect](../s08dc/quick_start_guide.md#6-programming-your-effect)
 
 ## 1. You Will Need
 
