@@ -47,6 +47,11 @@ nav:
       - Overview: osc_api/utility_commands/overview.md
       - Ping: osc_api/utility_commands/ping.md
       - Default Handler: osc_api/utility_commands/default_handler.md
+  - Cookbook:
+    - Overview: cookbook/overview.md
+    - Effects:
+      - Overview: cookbook/effects/overview.md
+      - Switch or Button Recipe: cookbook/effects/dc8_switch.md
   - Reference Material:
       - Overview: references/overview.md
       - Ethernet Guide: references/ethernet_guide.md

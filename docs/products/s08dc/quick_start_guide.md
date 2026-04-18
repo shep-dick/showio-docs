@@ -19,10 +19,9 @@ We're excited to see what you can build with your new ShowIO node! At Show Techn
 ### Tools:
  - Small slotted screwdriver
 
-### Equipment
+### Equipment:
  - 12-24v DC Power Supply
  - USB-C cable and/or Ethernet Cable with 8P8C/RJ45 Jacks
- - Network switch
  - Show control computer running OSC-compatible software of your choice
 
 ## 2. Plugging In
@@ -37,7 +36,7 @@ We're excited to see what you can build with your new ShowIO node! At Show Techn
     - Verify correct polarity before applying power. Reverse polarity may damage the device despite built-in protection.
     - Keep the device away from water, excessive heat, and flammable materials.
 
-You can power your ShowIO node two ways: plugging a USB-C cable into the jack on the data side, or applying 12-24v DC into the IO side. USB-C power ONLY powers the ShowIO node microchip; you can configure the device and transmit OSC messages, but you can't run IO off of it. Connecting the node to DC power will both power up both the chip and the IO. 
+You can power your ShowIO node two ways: plugging a USB-C cable into the port on the data side, or applying 12-24v DC into the IO side. USB-C power ONLY powers the ShowIO node microchip; you can configure the device and transmit OSC messages, but you can't run IO off of it. Connecting the node to DC power will both power up both the chip and the IO. 
 
 Once you're powered up, you should see the status LED turn yellow (if you're not connected to Ethernet) or green (if you are) and you can start pushing buttons and watching lights turn on. If you're planning to use OSC over Ethernet, you should configure your device's DIP switches to use a QuickIP or DHCP and plug it into the network switch. If you're plugged into 12-24v power, the amber LED by the power terminals will also be illuminated.
 
@@ -45,11 +44,15 @@ Once you're powered up, you should see the status LED turn yellow (if you're not
 
 ## 3. Getting On The Network
 
-You can send OSC over USB, but by far the most flexible option will be getting your device on a [LAN](../../references/ethernet_guide.md#lans) with your control computer. To do this, you'll need to set your control computer and ShowIO node to the same [subnet](../../references/ethernet_guide.md#manual-addressing). Your /digital/combo/8 has one IP address baked in, and the option to set one more. The fastest way to get your computer and node talking is to set your computer's Ethernet adaptor IP port to the `192.168.10.0/8` subnet and assigning your node a Quick-IP address. Different operating systems handle this differently; you should consult the documentation for your computer. You will also need to tell your show control program what IP address and Port to send OSC messages to over UDP. By default, ShowIO nodes listen on port `8888`. 
+You can send OSC over USB, but by far the most flexible option will be getting your device on a [LAN](../../references/ethernet_guide.md#lans) with your control computer. To do this, you'll need to set your control computer and ShowIO node to the same [subnet](../../references/ethernet_guide.md#manual-addressing) and connect them with your Ethernet cable. Your /digital/combo/8 has one IP address baked in, and the option to set one more. The fastest way to get your computer and node talking is to set your computer's Ethernet adaptor IP port to the `192.168.10.0/8` subnet and assigning your node a Quick-IP address. Different operating systems handle this differently; you should consult the documentation for your computer. You will also need to tell your show control program what IP address and Port to send OSC messages to over UDP. By default, ShowIO nodes listen on port `8888`. 
 
 You can also set your ShowIO node's IP address using DHCP, or fully configure a manual IP address. Instructions for those methods are in the [manual](../../products/s08dc/manual.md#network-configuration).
 
-#### Setting the IP Address with Quick-IP
+!!! tip
+
+    If you only want to connect your computer and one node, you can connect them directly with an Ethernet cable. If you have more than two devices, connect them with a [Switch.](../../references/ethernet_guide.md#lan-physical-connections)
+
+### Setting the IP Address with Quick-IP
 
 This configuration flow should be familiar to anyone that's set a DMX address on a light. We set the first 8 DIP switches to a binary representation of a number, 1-254.
 
@@ -80,11 +83,14 @@ Now Alice can send messages from her laptop to all three nodes!
 
 If your effect involves a solenoid, electromagnet, light, or other 12-24v load that you want to turn on or off, you'll want to hook it up to one of the Digital Output channels. Simply wire the positive leg of your effect to the positive terminal, and the negative to the negative. You can verify that your wiring is working by pressing the troubleshooting button associated with that digital output. Send your device the [Set Digital Output](../../osc_api/io_commands/set_digital_output.md) command to turn the channel on or off.
 
+<p align="center"><img src="../../../assets/diagrams/wiring/digital_output.svg" height=200></p>
+
+
 ## 5. Setting Up Digital Inputs
 
-If you need to get an input from a switch or digital sensor, you will wire it to a Digital Input channel. Digital Inputs are not powered; you will wire one terminal of the Input Channel to the power terminal, and connect the other input terminal through your switch or sensor. To get data from your digital input, you can send a [Subscribe Me](../../osc_api/configuration_commands/subscribe_me.md) from your show control software to receive a [Report](../../osc_api/overview.md#message-types) whenever a digital input changes state. You can also send a [Get Digital Input](../../osc_api/io_commands/get_digital_output.md) command to poll an output's state at any time.
+If you need to get an input from a switch or digital sensor, you will wire it to a Digital Input channel. Digital Inputs are not powered; you will wire one terminal of the Input Channel to the power terminal, and connect the other input terminal through your switch or sensor. To get data from your digital input, you can send a [Subscribe Me](../../osc_api/configuration_commands/subscribe_me.md) from your show control software to receive a [Report](../../osc_api/overview.md#message-types) whenever a digital input changes state. By default, your device will send reports to Port `9999`. You can change this to match your show control's receiving port by sending a [Set Response Port](../../osc_api/configuration_commands/set_response_port.md) command. You can also send a [Get Digital Input](../../osc_api/io_commands/get_digital_output.md) command to poll an output's state at any time.
 
-#### Channel Wiring Example
+##### Channel Wiring Example
 
 <p align="center"><img src="../../../assets/diagrams/wiring/digital_input.svg" height=200></p>
 
