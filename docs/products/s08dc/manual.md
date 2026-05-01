@@ -10,7 +10,7 @@ The ShowIO Digital Combo 8 (SIO-S08DC) is a compact I/O node for show control an
 
 ### What's in the Box
 - ShowIO Digital Combo 8 Module (including enclosure, if ordered)
-- Quick start guide
+- Quick start QR card
 
 ### Intended Applications
 

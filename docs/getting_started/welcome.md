@@ -8,7 +8,7 @@ If you're new, we recommend at least skimming this section of the documentation 
 
 ShowIO is our family of show control hardware. By using a ShowIO device, you can connect stuff to your show control system that normally wouldn't fit. How do you plug a hall effect sensor into your Mac to get it to trigger a sound cue? How do you make your lightboard turn on a pneumatic valve? ShowIO is how.  
 
-A ShowIO device is called a **Node**. Nodes have I/O ports, to connect **Instruments** (which is what we'll call any electrical device like sensor, switch, motor, valve, etc), and communication ports, to connect to **Controllers** and other Nodes.  
+A ShowIO device is called a **Node**. Nodes have I/O ports, to connect **Instruments** (which is what we'll call any electrical device like sensor, switch, motor, valve, etc), and communication ports, to connect to **Controllers** and other Nodes. Information for specific nodes can be found in the [Products](../products/overview.md) section.
 
 A Controller can be anything that sends messages to a ShowIO Node. For example - a Mac running QLab, an ETC Eos lighting console, or an iPad running TouchOSC.  
 

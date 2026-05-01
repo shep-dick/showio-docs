@@ -1,6 +1,6 @@
 # CONNECT A BUTTON OR SWITCH TO YOUR /DIGITAL/COMBO/8
 
-Start here if you want your ShowIO node to send messages when a button is pressed or switch is flipped.
+Start here if you want your ShowIO node to send messages when an Instrument like a button is pressed or switch is flipped.
 
 [1. You Will Need](../effects/dc8_switch.md#1-you-will-need)
 

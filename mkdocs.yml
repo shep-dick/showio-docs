@@ -52,6 +52,7 @@ nav:
     - Effects:
       - Overview: cookbook/effects/overview.md
       - Switch or Button Recipe: cookbook/effects/dc8_switch.md
+      - Controlling Digital Outputs Recipe: cookbook/effects/dc8_output.md
   - Reference Material:
       - Overview: references/overview.md
       - Ethernet Guide: references/ethernet_guide.md

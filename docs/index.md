@@ -4,7 +4,7 @@
 
     **The ShowIO platform is still in development. The contents of this documentation may be incomplete or change frequently.**
 
-    *Last updated April 13, 2026*
+    *Last updated April 29, 2026*
 
 ## Introduction
  
@@ -25,11 +25,11 @@ Welcome to Show Technologies' documentation page! This site contains step-by-ste
 - [I/O Commands](osc_api/io_commands/overview.md)
 - [Utility Commands](osc_api/utility_commands/overview.md)
 
-:material-connection: **Integrations (COMING SOON)**
+:material-connection: **[Integration Cookbook](cookbook/third%20party%20software/overview.md)**
 
 - Guides on how to integrate ShowIO Nodes with your favorite show control platforms.
 
-:fontawesome-solid-book: **Cookbook (COMING SOON)**
+:fontawesome-solid-book: **[Cookbook](cookbook/effects/overview.md)**
 
 - Handy tutorials on how to make cool effects with ShowIO.
 
