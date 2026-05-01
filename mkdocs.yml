@@ -6,6 +6,7 @@ nav:
   - Products:
     - Overview: products/overview.md
     - Digital Combo 8:
+      - Quick Start Guide: products/s08dc/quick_start_guide.md
       - Manual: products/s08dc/manual.md
       - Datasheet: assets/datasheet_s08dc.pdf
       - Changelog: products/s08dc/changelog.md
@@ -46,6 +47,16 @@ nav:
       - Overview: osc_api/utility_commands/overview.md
       - Ping: osc_api/utility_commands/ping.md
       - Default Handler: osc_api/utility_commands/default_handler.md
+  - Cookbook:
+    - Overview: cookbook/overview.md
+    - Effects:
+      - Overview: cookbook/effects/overview.md
+      - Switch or Button Recipe: cookbook/effects/dc8_switch.md
+      - Controlling Digital Outputs Recipe: cookbook/effects/dc8_output.md
+  - Reference Material:
+      - Overview: references/overview.md
+      - Ethernet Guide: references/ethernet_guide.md
+      - OSC Guide: references/osc_guide.md
 # SITE CONFIGURATION
 site_name: Show Technologies Docs
 site_url: https://docs.show-technologies.com/
