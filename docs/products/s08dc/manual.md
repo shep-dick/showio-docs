@@ -4,6 +4,9 @@
 
 4-channel digital input + 4-channel digital output module.
 
+- See the Quick Start Guide [here](../../products/s08dc/quick_start_guide.md)
+- Download the PDF datasheet [here](../../assets/datasheet_s08dc.pdf)
+
 ## Introduction
 
 The ShowIO Digital Combo 8 (SIO-S08DC) is a compact I/O node for show control and automation application. It provides 4 digital inputs and 4 digital outputs, controllable and configurable over Ethernet using the OSC protocol.

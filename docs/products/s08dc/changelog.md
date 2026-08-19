@@ -1,5 +1,25 @@
 # Changelog
 
+## Firmware Release - Version: 0.3.0
+Released August 12, 2026
+
+### Features:
+
+- Fully-featured web UI
+- Cloud firmware updates
+- OSC WebSocket integration
+
+### Improvements:
+
+- Efficiency improvements to network message piping 
+- Improve reliability of configuration system
+
+### Fixes:
+
+- Updated [sio/cfg/osc/reportMsg/di/<channel>/<state>] response address to include channel and state
+- Changed default device name to "My ShowIO" (was SHOWIO_PROTO5)
+- Changed USB interface product name to "SIO-S08DC" (was SIO-PROTO5)
+
 ## Firmware Release - v0.2.7
 Released January 30, 2026
 

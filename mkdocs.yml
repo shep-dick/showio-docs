@@ -10,6 +10,7 @@ nav:
       - Manual: products/s08dc/manual.md
       - Datasheet: assets/datasheet_s08dc.pdf
       - Changelog: products/s08dc/changelog.md
+      - Updating Firmware: products/s08dc/updating_firmware.md
   - ShowIO API:
     - Overview: osc_api/overview.md
     - Configuration Commands:
