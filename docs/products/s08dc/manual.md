@@ -107,20 +107,24 @@ The ShowIO Digital Combo 8 uses onboard DIP switches to set its LAN (Local Area 
 | **Manual IP** | 0 | Manually set an IP address and subnet in software. |
 | **Auto-IP (DHCP)** | 255 | Enable DHCP and receive an automatically assigned IP address from your network infrastructure. |
 
-After making changes to a Node's LAN configuration, power-cycle or restart it for the changes to take effect.
+After making changes to a node's LAN configuration, power-cycle or restart it for the changes to take effect.
 
 #### Setting the IP Address Manually
 
-A Node's static network settings can manually be set using commands from the [OSC API](../../osc_api/overview.md). Note that this requires an existing connection to the Node. To enable manual IP mode, set the DIP switches to `0`. On next boot, the Node will have the manually set IP configuration.
+A node's static network settings can manually be set using commands from the [OSC API](../../osc_api/overview.md). Note that this requires an existing connection to the node. To enable manual IP mode, set the DIP switches to `0`. On next boot, the node will have the manually set IP configuration.
 
 The factory-default manual IP setting is `10.11.12.10` with a subnet mask of `255.0.0.0` and default gateway `10.0.0.1`.
 
 #### Setting the IP Address with Auto-IP
 
-The Node can use DHCP to request an automatically assigned IP address from a DHCP server (generally, a router or managed network switch). To enable DHCP, set the DIP switches to `255`. On next boot, the Node will search for a DHCP server to request an IP address.
+The node can use DHCP to request an automatically assigned IP address from a DHCP server (generally, a router or managed network switch). To enable DHCP, set the DIP switches to `255`. On next boot, the node will search for a DHCP server to request an IP address.
 
 ### OSC Configuration
 
-After getting a Node connected to a LAN, any Controller on that LAN can send it OSC commands at port `UDP: 8888` (configurable).
+After getting a node connected to a LAN, any Controller on that LAN can send it OSC commands at port `UDP: 8888` (configurable).
 
-When a Controller sends a Node a Request Command, the Node will reply with a message sent to `UDP: 9999` (configurable).
+When a Controller sends a node a Request Command, the node will reply with a message sent to `UDP: 9999` (configurable).
+
+### Status LED
+
+Your node has an RGB LED beside the IO test buttons. It flashes yellow when the device is on but not connected to a LAN, and displays solid green when the device is on and connected to a LAN. 

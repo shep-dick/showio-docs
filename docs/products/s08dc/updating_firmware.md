@@ -19,7 +19,7 @@ If your board was purchased before 8/16/26, you will update your firmware manual
 
 ## 2. Procedure
 
-In your web browser, download the .uf2 file for the most up to date firmware version from [Github](https://github.com/show-technologies/showio-releases/tree/main/s08dc/firmware). As of 8/18/2026, the most up to date firmware is version 0.3.0. 
+In your web browser, download the .uf2 file for the most up to date firmware version from [Github](https://github.com/show-technologies/showio-releases/tree/main/s08dc/firmware). As of 8/19/2026, the most up to date firmware is version 0.3.1. 
 
 <p align="center"><img src="../../../assets/photos/Github Path.png" height=200></p>
 <p align="center"><img src="../../../assets/photos/Github Download Button.png" height=200></p>
@@ -47,3 +47,5 @@ A new storage device called RPI-RP2 will appear in your computer's file system. 
 Navigate to the FIRMWARE tab in the sidebar. From here you can check the latest firmware version and compare it against your device's firmware in the bottom left corner. If there is an update available, you can push it to your device using the "Push To Device" button.
 
 <p align="center"><img src="../../../assets/photos/Web UI Firmware Page.png" height=200></p>
+
+The WebUI will tell you when to reset your device. It will take some time for your node to finish updating its firmware, during which time the status LED will be off. After about a minute of torpor, your node's status LED should light back up, and you will be up and running.

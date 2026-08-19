@@ -1,6 +1,12 @@
 # Changelog
 
-## Firmware Release - Version: 0.3.0
+## Firmware Release - v0.3.1
+Released August 19, 2026
+
+### Fixes:
+- No longer crashes on boot in DHCP mode
+
+## Firmware Release - v0.3.0
 Released August 12, 2026
 
 ### Features:

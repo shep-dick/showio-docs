@@ -4,7 +4,7 @@
 
     **The ShowIO platform is still in development. The contents of this documentation may be incomplete or change frequently.**
 
-    *Last updated August 18, 2026*
+    *Last updated August 19, 2026*
 
 ## Introduction
  
